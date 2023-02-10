@@ -67,9 +67,9 @@
 		<!-- built files will be auto injected -->
 
 		<!--在图像描述符加载前显示 loading，根据设备的计算力，加载可能需要一点时间。-->
-		<div class="arjs-loader">
+		<!-- <div class="arjs-loader">
 			<div>Loading, please wait...</div>
-		</div>
+		</div> -->
 
 		<!-- a-frame scene -->
 		<a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded
@@ -79,10 +79,11 @@
 			<!-- 路径应该以名称结束，无需扩展名。举例来说，如果文件是“pinball.fset”那么路径的结尾单次就是“pinball” -->
 			<a-nft type="nft" url="nftDescriptors/跨越塔" smooth="true" smoothCount="10"
 				smoothTolerance=".01" smoothThreshold="5">
-				<!-- 作为 a-nft 的子元素，您可以定义要显示的内容。下面是一个 GLTF 模型实体 -->
-				<a-entity gltf-model="model/tower.gltf" scale="5 5 5" position="50 150 0">
+				<a-entity gltf-model="model/tower.gltf" scale="0.5 0.5 0.5" position="-5 0 -30">
 				</a-entity>
 			</a-nft>
+			<!-- 作为 a-nft 的子元素，您可以定义要显示的内容。下面是一个 GLTF 模型实体 -->
+			
 			<!-- 静态摄像机，根据设备的运动参数进行移动 -->
 			<a-entity camera></a-entity>
 		</a-scene>
